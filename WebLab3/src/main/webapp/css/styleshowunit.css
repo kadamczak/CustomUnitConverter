@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+html body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3em;
+    font-weight: normal;
+    color: white;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 2.4em;
+}
+
+p{
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+
+#main-row{
+    width: min(80%, 1400px);
+    height: 67vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(151, 146, 146);
+    background-image: linear-gradient(rgb(165, 160, 178), rgb(161, 156, 176), rgb(52, 46, 52));
+    padding: 2rem 1rem 3rem 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+#back-button{
+    padding: 1.3rem 5rem 1.3rem 5rem;
+    font-family: Verdana;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#result-flex{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    gap: 1.2em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 3%;
+}
+
+.result-label{
+    font-family: Verdana;
+    font-size: 1.3em;
+}
+
+#symbol{
+    font-weight: bold;
+}
+#conv{
+    font-weight: bold;
+}
+
+#table-container{
+    width: 20%;
+    margin: auto;
+    /*margin-left: 2.6rem;*/
+    margin-top: 0rem;
+}
+
+
+#table-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+#conversions-table{
+    max-height: 14vh;
+    min-height: 0vh;
+    background-color: rgba(245, 246, 249, 0.525);
+    padding-bottom: 3em;
+    border-radius: 10px;
+    margin-bottom: 0.1em;
+}
+
+.table{
+    font-family: Monospace;
+    font-size: 1.4em;
+    width: 100%;
+}
+
+.table th{
+    font-family: Verdana;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+th, td{
+    padding: 0.6em;
+}
+
+.table tr:nth-child(even){
+    background-color: rgba(107, 107, 110, 0.273);
+
+}
